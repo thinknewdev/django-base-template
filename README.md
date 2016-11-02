@@ -7,11 +7,29 @@
 This template installs a fully functional Django website in just a few minutes.
 
 
-This version of the project template includes new options for Django 1.8, 1.9, 1.10 , has bootstrap3 installed and Allauth configured.
+This version of the project template includes new options for Django 1.8, 1.9, 1.10 , has bootstrap3 installed and Allauth configured, and some other useful apps as well.
 
-There are different way of setting up a django environment, 
-and this template is the result of many 'best practice' strategies for setting up a django project structure.
-It aims to be simple, clear, yet complete.
+The goal of this template is to set up a fully functional django project in minutes, and have a clear project structure.
+
+The project structure:
+
+src                   # project root  
+├── manage.py
+├── /static
+├── /config           # project configururation 
+│   ├── /settings   
+│   │   ├── base.py   # project settings   
+│   │   ├── local.py  # local settings (development)
+│   ├── urls.py        
+│   ├── wsgi.py
+├── /base             # base templates and static files  
+│   ├── models.py
+│   ├── /static
+│   ├── /templates
+│    ...
+├── /myApp            # create your app using Startapp..    
+    ... 
+
 
 Demo: http://dj.lxer.eu
 
