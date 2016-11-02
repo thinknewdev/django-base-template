@@ -12,28 +12,29 @@ This version of the project template includes new options for Django 1.8, 1.9, 1
 The goal of this template is to set up a fully functional django project in minutes, and have a clear project structure.
 
 The project structure:
-
+```
 src                   # project root  
 ├── manage.py
 ├── /static
-├── /config           # project configururation 
+├── /config           # project configuration 
 │   ├── /settings   
 │   │   ├── base.py   # project settings   
 │   │   ├── local.py  # local settings (development)
 │   ├── urls.py        
 │   ├── wsgi.py
-├── /base             # base templates and static files  
+├── /layout           # base templates and static files  
 │   ├── models.py
 │   ├── /static
 │   ├── /templates
 │    ...
 ├── /myApp            # create your app using Startapp..    
     ... 
-
+```
 
 Demo: http://dj.lxer.eu
 
-![django installation](http://pasteio.com/m236f398c142f691815602b8f1c616bbf)
+![](http://i.imgur.com/kJcha7b.gif)
+
 ## Installation ##
 
 
@@ -56,7 +57,7 @@ Demo: http://dj.lxer.eu
 - $ source bin/activate
 
 - run install.sh :
-      - $ source <(wget -qO- https://raw.githubusercontent.com/allox/django-base-template/master/install.sh)
+   - $ source <(wget -qO- https://raw.githubusercontent.com/allox/django-base-template/master/install.sh)
   
 (To see what actually happens check https://raw.githubusercontent.com/allox/django-base-template/master/install.sh )
 
