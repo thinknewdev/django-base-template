@@ -1,6 +1,12 @@
 #!/bin/bash
 echo "Install Django "
-pip install Django
+version=$(python -V 2>&1 | grep -Po '(?<=Python )(.)')
+if [ "$version" -lt 3 ]; then
+pip install 'django>=1.11,<2.0'
+else
+pip install 'django>=2.0'
+fi
+
 
 echo "Startproject"
 bin/django-admin.py startproject --template https://github.com/allox/django-base-template-1.8/zipball/master --extension py,md,rst config && \

@@ -1,17 +1,17 @@
 
-# Django  Project Template - Bootstrap3, Allauth#
+# Django2/Django1.11 complete installer #
 
 ## About ##
 
 
 This template installs a fully functional Django website in just a few minutes.
 
-
-This version of the project template includes new options for Django 1.8, 1.9, 1.10 , has bootstrap3 installed and Allauth configured, and some other useful apps as well.
+Django 1.11 (for python2.7)
+Django 2 (python3)
+includes bootstrap3, Allauth, and some other useful apps.
 
 The goal of this template is to set up a fully functional django project in minutes, and have a clear project structure.
 
-The project structure:
 ```
 src                   # project root  
 ├── manage.py
@@ -39,28 +39,31 @@ Demo: http://dj.lxer.eu
 
 
 - Make sure you have libffi installed 
-   - $ sudo apt-get install libffi-dev
+``` 
+$ sudo apt-get install libffi-dev
+```
 - (when using python3) Make sure you have libevent-dev, python3-dev  installed 
-   - $ sudo apt-get install libevent-dev python3-dev
+```
+$ sudo apt-get install libevent-dev python3-dev
+```
 - Install if not installed already (needed for bcrypt):
-   - $ sudo apt-get install build-essential libssl-dev libffi-dev python-dev 
-- Install if not installed already (needed for pillow):
-   - $ sudo apt-get install libtiff5-dev libjpeg8-dev
-   
+```
+$ sudo apt-get install build-essential libssl-dev libffi-dev python-dev libtiff5-dev libjpeg8-dev
+```   
 - Create your working environment and virtualenv:
-   - $ virtualenv project
-
-   python3:
-   - $ virtualenv -p python3 project
-    
-- $ cd project
-- $ source bin/activate
-
+```
+$ virtualenv project
+$ virtualenv -p python3 project  # for python3/django2
+```
+```    
+$ cd project
+$ source bin/activate
+```
 - run install.sh :
-   - $ source <(wget -qO- https://raw.githubusercontent.com/allox/django-base-template/master/install.sh)
+```
+$ source <(wget -qO- https://raw.githubusercontent.com/allox/django-base-template/master/install.sh)
+```
   
-(To see what actually happens check https://raw.githubusercontent.com/allox/django-base-template/master/install.sh )
-
 ...and that's all!
 
 
